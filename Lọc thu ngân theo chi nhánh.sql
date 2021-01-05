@@ -1,0 +1,7 @@
+SELECT	NV.MANV AS 'Mã nhân viên',
+		NV.TENNV AS 'Tên nhân viên',
+		CN.TENCN AS 'Tên chi nhánh'
+FROM NHANVIEN NV
+	INNER JOIN CHINHANH CN
+		ON NV.MACN = CN.MACN
+WHERE NV.CHUCVU = N'THU NGÂN'
